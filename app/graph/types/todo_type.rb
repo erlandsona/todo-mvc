@@ -1,7 +1,5 @@
 TodoType = GraphQL::ObjectType.define do
   name "Todo"
-  description "Todo"
-  interfaces [NodeIdentification.interface]
-  global_id_field :id
-  field :name, !types.String, "Todo name"
+  description "Item for the checklist of things to get done."
+  field :todo, types.String
 end

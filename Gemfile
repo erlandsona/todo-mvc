@@ -8,17 +8,29 @@ gem 'graphql-relay', '~>0.9'
 # gem 'graphiql-rails'
 gem 'graphql-libgraphqlparser'
 
+gem 'multi_json'
+
 gem 'pg'
 gem 'puma'
-gem 'react-rails'
+gem 'rack-cors', require: 'rack/cors'
 gem 'rails_12factor', group: :production
 gem 'rails', '4.2.3'
+gem 'react-rails'
+gem 'responders'
+gem 'trailblazer-rails'
+gem 'roar-rails'
+gem 'representable'
 # gem 'sass-rails', '~> 5.0'
 # gem 'uglifier', '>= 1.3.0'
 
+gem 'web-console', '~> 2.0', group: :development
 group :development, :test do
   gem 'better_errors'
-  gem 'web-console', '~> 2.0'
+  gem 'binding_of_caller'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
   # gem 'byebug'
   # gem 'spring'
 end

@@ -9,9 +9,16 @@ QueryType = GraphQL::ObjectType.define do
 
   field :todo do
     type TodoType
-    description "Item for the checklist of things to get done."
+    argument :id, !types.ID
     resolve -> (obj, args, ctx) do
-      Hashie::Mash.new( { id: rand(1000), name: 'Fabio' } )
+      Todo.find(args[:id])
+    end
+  end
+
+  field :simple do
+    type SimpleType
+    description "Simple Stuff"
+    resolve -> (obj, args, ctx) do
     end
   end
 
