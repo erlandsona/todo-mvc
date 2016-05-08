@@ -23,14 +23,18 @@ gem 'representable'
 # gem 'sass-rails', '~> 5.0'
 # gem 'uglifier', '>= 1.3.0'
 
-gem 'web-console', '~> 2.0', group: :development
+group :development do
+  gem 'web-console', '~> 2.0'
+end
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+end
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry'
   gem 'pry-byebug'
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
   # gem 'byebug'
   # gem 'spring'
 end

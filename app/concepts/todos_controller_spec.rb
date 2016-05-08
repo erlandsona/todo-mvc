@@ -1,4 +1,4 @@
-describe TodosController, type: :controller do
+RSpec.describe TodosController, type: :controller do
 
   describe "#index" do
     before { get :index }
