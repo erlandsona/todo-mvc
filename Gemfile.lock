@@ -56,7 +56,6 @@ GEM
     debug_inspector (0.0.2)
     declarative (0.0.7)
       uber (>= 0.0.15)
-    diff-lcs (1.2.5)
     diffy (3.1.0)
     disposable (0.2.6)
       declarative (~> 0.0.6)
@@ -83,6 +82,9 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    minitest-spec-rails (5.3.0)
+      minitest (~> 5.0)
+      rails (>= 4.1)
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -154,23 +156,6 @@ GEM
       roar (>= 1.0.0, <= 1.1.0)
       test_xml (>= 0.1.6)
       uber (>= 0.0.5)
-    rspec-core (3.5.0.beta3)
-      rspec-support (= 3.5.0.beta3)
-    rspec-expectations (3.5.0.beta3)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (= 3.5.0.beta3)
-    rspec-mocks (3.5.0.beta3)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (= 3.5.0.beta3)
-    rspec-rails (3.5.0.beta3)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (= 3.5.0.beta3)
-      rspec-expectations (= 3.5.0.beta3)
-      rspec-mocks (= 3.5.0.beta3)
-      rspec-support (= 3.5.0.beta3)
-    rspec-support (3.5.0.beta3)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
     slop (3.6.0)
@@ -213,6 +198,7 @@ DEPENDENCIES
   graphql (~> 0.13)
   graphql-libgraphqlparser
   graphql-relay (~> 0.9)
+  minitest-spec-rails
   multi_json
   pg
   pry
@@ -225,7 +211,6 @@ DEPENDENCIES
   representable
   responders
   roar-rails
-  rspec-rails
   shoulda-matchers
   trailblazer-rails
   web-console (~> 2.0)

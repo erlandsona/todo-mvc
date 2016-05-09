@@ -27,7 +27,8 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 group :test do
-  gem 'rspec-rails'
+  gem 'minitest-spec-rails'
+  # gem 'minitest-reporters'
   gem 'shoulda-matchers'
 end
 group :development, :test do
